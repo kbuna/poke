@@ -13,7 +13,20 @@ def change_data(entry_id):
     #画像ファイルでイメージを作る
     img["file"] = pokemon.img
     flavor_text_msg["text"] = pokemon.flavor_text
+"""
+#print(__name__)をコンソールで出すと__main__と出る。
+pokeAPIの方で、print(__name__)これを実行すると、mainになる。
 
+モジュール名が出てくる
+実行したファイル。__main__
+インポートしたファイルの中はモジュールの名前がnameで出てくる。
+実行ファイルか、インポートされたファイルかを区別できるもの
+
+main.pyを実行したときにだけ実行されるのがpokeapi。
+importはコードの中身が丸々書いてあるのと同じ意味。
+
+
+"""
 
 if __name__ == "__main__":
     font_size = 20 # ウィンドウ上の文字サイズ
